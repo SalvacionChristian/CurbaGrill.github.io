@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Our Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Add the provided CSS code here */
+    .menu-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .menu-item img {	
+      width: 200px; /* Adjust the width as needed */
+      height: auto;
+      margin-right: 10px;
+    }
+
+    .menu-item-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu-item h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .price-and-button {
+      display: flex;
+      flex-direction: column; /* Updated to column layout */
+      align-items: flex-start; /* Updated alignment */
+      margin-top: 10px; /* Updated margin-top */
+    }
+
+    .menu-item .price {
+      font-weight: bold;
+      margin-bottom: 10px; /* Added margin-bottom */
+    }
+
+    .menu-item button {
+      width: 120px;
+      border: 0;
+      padding: 10px 10px;
+      outline: none;
+      color: #fff;
+      background: linear-gradient(to right, #333, #333);
+      border-radius: 6px;
+      cursor: pointer;
+      transition: width 0.5s;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .menu-item button img {
+      width: 30px;
+      display: none;
+    }
+
+    .menu-item button:hover img {
+      display: block;
+      margin-left: 5px;
+    }
+
+    .menu-item button:hover {
+      width: 140px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="C:\Users\Eldrian\Desktop\website, 2 web page\logo.png.jpg" alt="Dear Cravings Logo"></a>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>        
+	  <li><a href="login.html">Log in</a></li>
+      <li><a href="signup.html">Sign up</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <!-- Content for the menu section -->
+    <h2>Our Menu</h2>
+    <div class="menu-item">
+      <img src="C:\Users\Eldrian\Desktop\website, 2 web page\boodle.jpg"alt="Food Item 1">
+      <div class="menu-item-content">
+        <h3>Curba BOODLE-BOODLE 3</h3>
+        <div class="price-and-button">
+          <span class="price">&#8369;95.00-35.00</span>
+          <button type="button" onclick="createOrderPage('Curba BOODLE-BOODLE 3')">ORDER<img src="images/arrow.png"></button>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="C:\Users\Eldrian\Desktop\website, 2 web page\Siomai rice.jpg" alt="Food Item 2">
+      <div class="menu-item-content">
+        <h3>Siomai Rice</h3>
+        <div class="price-and-button">
+          <span class="price">&#8369;39.00 </span>
+          <button type="button" onclick="createOrderPage('Siomai Rice')">ORDER<img src="images/arrow.png"></button>
+          <span class="price">&#8369;80.00 - Large</span>
+          <button type="button" onclick="createOrderPage('Siomai Rice')">ORDER<img src="images/arrow.png"></button>
+        </div>
+      </div>
+    </div>
+	<div class="menu-item">
+      <img src="C:\Users\Eldrian\Desktop\website, 2 web page\Pork adobo with rice.jpg" alt="Food Item 3">
+      <div class="menu-item-content">
+        <h3>Pork Adobo With Rice </h3>
+        <div class="price-and-button">
+          <span class="price">&#8369;49.00 - Medium</span>
+          <button type="button" onclick="createOrderPage('Pork adobo with rice ')">ORDER<img src="images/arrow.png"></button>
+          <span class="price">&#8369;89.00 - Large</span>
+          <button type="button" onclick="createOrderPage('Pork adobo with rice ')">ORDER<img src="images/arrow.png"></button>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="C:\Users\Eldrian\Desktop\website, 2 web page\Skinless longganisa rice.jpg" alt="Food Item 4">
+      <div class="menu-item-content">
+        <h3>Skinless Longganisa</h3>
+        <div class="price-and-button">
+          <span class="price">&#8369;100.00 - Skinless longganisa</span>
+          <button type="button" onclick="createOrderPage('Skinless longganisa')">ORDER<img src="images/arrow.png"></button>
+          <span class="price">&#8369;75.00 - Large-Skinless longganisa</span>
+          <button type="button" onclick="createOrderPage('Skinless longganisa')">ORDER<img src="images/arrow.png"></button>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="C:\Users\Eldrian\Desktop\website, 2 web page\Fries and drinks.jpg" alt="Food Item 5">
+      <div class="menu-item-content">
+        <h3>Fries and Drinks</h3>
+        <div class="price-and-button">
+          <span class="price">&#8369;39.00 </span>
+          <button type="button" onclick="createOrderPage('Fries and drinks')">ORDER<img src="images/arrow.png"></button>
+        </div>
+      </div>
+    </div>    
+	<div class="menu-item">
+      <img src="C:\Users\Eldrian\Desktop\website, 2 web page\Pizza.jpg"alt="Food Item 6">
+      <div class="menu-item-content">
+        <h3>Pizza</h3>
+        <div class="price-and-button">
+          <span class="price">&#8369;300.00</span>
+          <button type="button" onclick="createOrderPage('Pizza')">ORDER<img src="images/arrow.png"></button>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="C:\Users\Eldrian\Desktop\website, 2 web page\Sizzling sisig.jpg" alt="Food Item 7">
+      <div class="menu-item-content">
+        <h3>Sizzling Sisig</h3>
+        <div class="price-and-button">
+          <span class="price">&#8369;300.00</span>
+          <button type="button" onclick="createOrderPage('Sizzling sisig')">ORDER<img src="images/arrow.png"></button>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="C:\Users\Eldrian\Desktop\website, 2 web page\Juice, fries and hotdog.jpg">
+      <div class="menu-item-content">
+        <h3>Fries and Hotdog</h3>
+        <div class="price-and-button">
+          <span class="price">&#8369;49.00</span>
+          <button type="button" onclick="createOrderPage('Fries and Hotdog')">ORDER<img src="images/arrow.png"></button>
+        </div>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="C:\Users\Eldrian\Desktop\website, 2 web page\Ice-cream.webp"alt="Food Item 9">
+      <div class="menu-item-content">
+        <h3>Ice-Cream</h3>
+        <div class="price-and-button">
+          <span class="price">&#8369;100.00</span>
+          <button type="button" onclick="createOrderPage('Ice-Cream')">ORDER<img src="images/arrow.png"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-links">
+      <img src="C:\Users\Eldrian\Desktop\website, 2 web page\Ig.png.png">
+        <img src="C:\Users\Eldrian\Desktop\website, 2 web page\Fb.png.png">
+        <img src="C:\Users\Eldrian\Desktop\website, 2 web page\Tw.png.png">
+    </div>
+    <p>&copy; 2024 Curba Grill.All rights reserved.</p>
+  </footer>
+
+  <script>
+    function createOrderPage(productName) {
+      // Create a new webpage or redirect to a new URL with the product name as a parameter
+      window.location.href = "order.html?product=" + encodeURIComponent(productName);
+    }
+  </script>
+</body>
+</html>
